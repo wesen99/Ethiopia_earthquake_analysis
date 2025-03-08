@@ -7,7 +7,7 @@ ui <- dashboardPage(
       menuItem("Statistical Analysis", tabName = "stats", icon = icon("chart-bar")),
       menuItem("Data Table", tabName = "data", icon = icon("table")),
       menuItem("News", tabName = "news", icon = icon("newspaper")),
-      sliderInput("days", "Days to analyze:", 60, min = 1, max = 365),
+      sliderInput("days", "Days to analyze:", 30, min = 1, max = 365),
       sliderInput("min_magnitude", "Minimum magnitude:", 4, min = 4, max = 10, step = 0.5),
       actionButton("refresh", "Refresh Data", class = "btn-primary")
     )
